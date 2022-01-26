@@ -19,7 +19,7 @@ function App() {
   <Container maxwidth='lg'>
   <AppBar className={classes.appBar} position='static' color='inherit'>
     <Typography className={classes.heading} variant='h2' align='center'>Memories</Typography>
-    <img className={classes.image}  alt='memories1' height='80' width='120'/>
+    <img className={classes.image} src={memories} alt='memories1' height='80' width='120'/>
   </AppBar>
   
   <Grow in>
