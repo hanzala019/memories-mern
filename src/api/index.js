@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url =   'http://localhost:4000' || "https://memories-with-mern.herokuapp.com"
+const url =   "https://memories-with-mern.herokuapp.com/" || ' http://localhost:4000'
 
 const API = axios.create({baseURL: url})
 
