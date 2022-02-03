@@ -25,12 +25,12 @@ function Navbar() {
 
         if(token){
             const decodedToken = decode(token);
-            if(decodedToken.exp * 1000 < new DataTransfer().getTime){
-                logout()
-            }
+            if(decodedToken.exp * 1000 < new DataTransfer().getTime) logout()
+            
         }
 
         setUser(JSON.parse(localStorage.getItem('profile')))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[location])
 
     return (
